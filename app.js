@@ -148,7 +148,7 @@ function DiceRoll() {
       <h1>{(die1 === 1 && die2 === 1) ? `SNAKE EYES` : `${die1} & ${die2}`}</h1>
     </div>
   );
-}
+  }
 //================
 //Sets the text for the h1 to "SNAKE EYES" if both die1 and die2 are equal to 1
 //Or
