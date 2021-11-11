@@ -19,8 +19,10 @@ ReactDOM.render(<Tagline />, document.getElementById(`root`));
 //3a. Create another function component called Janine that returns the following text inside of two separate h2 elements. First h2 element text: "I've quit better jobs than this.". Second h2 element text: "Ghostbusters, whaddya want?". (HINT: Remember only one parent/top element can be returned from a component)
 function Janine() {
   return (
-    (<h2>I've quit better jobs than this</h2>),
-    (<h2>Ghostbusters, whaddya want?</h2>)
+      <div>
+    <h2>I've quit better jobs than this</h2>
+    <h2>Ghostbusters, whaddya want?</h2>
+    </div>
   );
 }
 //=======================
@@ -40,10 +42,10 @@ function MassHysteria() {
           Fire and brimstone coming down from the skies! Rivers and seas
           boiling!
         </li>
-        ,<li>Forty years of darkness! Earthquakes! Volcanoes!</li>,
+        <li>Forty years of darkness! Earthquakes! Volcanoes!</li>
         <li>The dead rising from the grave!</li>
-        <p>Human sacrifice! Dogs and cats, living together! Mass hysteria! </p>,
       </ul>
+      <p>Human sacrifice! Dogs and cats, living together! Mass hysteria! </p>
     </div>
   );
 }
@@ -52,25 +54,12 @@ function MassHysteria() {
 ReactDOM.render(<MassHysteria />, document.getElementById(`root`));
 //=====================
 //5a. Create a function component called GhostbustersLogo that returns an img (Image) element using the following image: https://cdn.pixabay.com/photo/2016/07/13/18/41/ghostbusters-1515155_1280.jpg (HINT: Remember there is a special way/syntax for writing self closing elements/tags in JSX)
-function GhostbustersLogo() {
-  return (
-    <div>
-      <img
-        src={`https://cdn.pixabay.com/photo/2016/07/13/18/41/ghostbusters-1515155_1280.jpg`}
-      />
-      ;
-    </div>
-  );
-}
-
-//OR
-/*
 function GhostbustersLogo(){
-return 
-<img src = {`https://cdn.pixabay.com/photo/2016/07/13/18/41/ghostbusters-1515155_1280.jpg`}/>;
-
+return (
+<img src = "https://cdn.pixabay.com/photo/2016/07/13/18/41/ghostbusters-1515155_1280.jpg"/>
+);
 }
-*/
+
 //=====================
 //5b. Below the GhostbustersLogo function component, use the ReactDOM Render method again to render/display the GhostbustersLogo function component in the div with the id of "root" in the HTML file
 ReactDOM.render(<GhostbustersLogo />, document.getElementById(`root`));
@@ -84,7 +73,12 @@ function ToolsTalent() {
   //6c. Below the "w" variable, use the return keyword and parentheses so the function component returns the following text inside of an h1 element as well as an h3 element. However, you need to plug in the "w" variable for each place there is a "We".
   //h1 element text: "We had the tools."
   //h3 element text: "We had the talent."
-  return (<h1>{w} had the tools</h1>), (<h3>{w} had the talent</h3>);
+  return (
+    <section>
+      <h1>{w} had the tools.</h1>
+      <h3>{w} had the talent.</h3>
+    </section>
+  );
 }
 //=====================
 //6d. Below the ToolsTalent function component, use the ReactDOM Render method again to render/display the ToolsTalent function component in the div with the id of "root" in the HTML file
@@ -95,10 +89,10 @@ function GhostbustersAll() {
   return (
     <div>
       <Ghostbusters />
-      <GhostbustersLogo />
       <Janine />
       <MassHysteria />
       <Tagline />
+      <GhostbustersLogo />
       <ToolsTalent />
     </div>
   );
@@ -131,7 +125,7 @@ class Dice extends React.component {
     }
 }
 export default Dice;
-*/
+
 
 //8a. Below the ReactDOM Render method, create another function component called DiceRoll.
 //================
@@ -163,4 +157,4 @@ function DiceRoll() {
 //================
 ReactDOM.render(<DiceRoll />, document.getElementById(`root`));
 //================
-
+*/
