@@ -125,7 +125,7 @@ class Dice extends React.component {
     }
 }
 export default Dice;
-
+*/
 
 //8a. Below the ReactDOM Render method, create another function component called DiceRoll.
 //================
@@ -157,4 +157,4 @@ function DiceRoll() {
 //================
 ReactDOM.render(<DiceRoll />, document.getElementById(`root`));
 //================
-*/
+
