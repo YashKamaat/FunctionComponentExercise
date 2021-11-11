@@ -145,7 +145,7 @@ function DiceRoll() {
 //================
   return (
     <div>
-      <h1>{die1 === 1 && die2 === 1 ? `SNAKE EYES` : `${die1} and ${die2}`}</h1>
+      <h1>{(die1 === 1 && die2 === 1) ? `SNAKE EYES` : `${die1} & ${die2}`}</h1>
     </div>
   );
 }
